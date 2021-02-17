@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfApp1
+namespace ShopApp
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NorthwindEntities : DbContext
+    public partial class ShopEntities : DbContext
     {
-        public NorthwindEntities()
-            : base("name=NorthwindEntities")
+        public ShopEntities()
+            : base("name=ShopEntities")
         {
         }
     
@@ -25,8 +25,9 @@ namespace WpfApp1
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Customers> Customers { get; set; }
-        public virtual DbSet<Order_Details> Order_Details { get; set; }
-        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<CUSTOMER> CUSTOMERS { get; set; }
+        public virtual DbSet<ORDER_DETAIL> ORDER_DETAIL { get; set; }
+        public virtual DbSet<ORDER> ORDERS { get; set; }
+        public virtual DbSet<PRODUCT> PRODUCTS { get; set; }
     }
 }

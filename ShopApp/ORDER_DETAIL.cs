@@ -7,19 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfApp1
+namespace ShopApp
 {
     using System;
-    using System.Collections.ObjectModel;
+    using System.Collections.Generic;
     
-    public partial class Order_Details
+    public partial class ORDER_DETAIL
     {
-        public int OrderID { get; set; }
-        public int ProductID { get; set; }
-        public decimal UnitPrice { get; set; }
-        public short Quantity { get; set; }
-        public float Discount { get; set; }
+        public int order_id { get; set; }
+        public int product_id { get; set; }
+        public Nullable<int> product_quantity { get; set; }
     
-        public virtual Orders Orders { get; set; }
+        public virtual ORDER ORDER { get; set; }
+        public virtual PRODUCT PRODUCT { get; set; }
     }
 }
